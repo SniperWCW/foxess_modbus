@@ -21,14 +21,19 @@ Supported models:
 - FoxESS H1 (including AC1, AIO-H1 and G2)
 - FoxESS H3 (including AC3 and AOI-H3)
 - FoxESS H3 PRO
+- FoxESS P1
 - FoxESS KH
 - Kuara H3
 - Sonnenkraft SK-HWR
 - STAR
 - Solavita SP
 - a-TroniX AX
+- a-Tronix AX Plus
 - Enpal
 - 1KOMMA5°
+- EKD Ampere.StoragePro E3
+- Solarwatt Vision
+- WEG SIW200H US (FoxESS H1-US, split-phase; read-only sensors)
 
 You will need a direct connection to your inverter.
 In most cases, this means buying a modbus to ethernet/USB adapter and wiring this to a port on your inverter.
