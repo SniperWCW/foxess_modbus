@@ -60,6 +60,7 @@ class InverterModel(StrEnum):
     ENPAL_IX = "ENPAL_IX"
     SOLARWATT_VISION = "VSN"
     ONE_KOMMA_FIVE = "1KOMMA5"
+    VSN_ONE = "VSN-ONE"
 
     H3_PRO = "H3_PRO"
     AMPERE_STORAGE_PRO = "AMPERE_STORAGE_PRO"
@@ -84,6 +85,8 @@ class Inv(Flag):
     H1_G2_PRE144 = auto()
     H1_G2_144 = auto()
     H1_G2_SET = H1_G2_PRE144 | H1_G2_144
+
+    VSN_ONE = auto()
 
     KH_PRE119 = auto()
     KH_PRE133 = auto()
@@ -113,7 +116,7 @@ class Inv(Flag):
     # sensors (the PV1/PV2 energy integrations, and the PV Power sum of pv1_power + pv2_power). H1_US has three strings
     # and reads PV power directly from its own register, so it must not pick these up. H1_US entities opt in
     # explicitly with Inv.H1_US.
-    ALL = H1_LAN | H1_G1 | H1_G2_SET | KH_SET | H3_SET | H3_PRO_SET | H3_SMART | EVO
+    ALL = H1_LAN | H1_G1 | H1_G2_SET | KH_SET | H3_SET | H3_PRO_SET | H3_SMART | EVO | VSN_ONE
 
 
 class RegisterPollType(IntEnum):
